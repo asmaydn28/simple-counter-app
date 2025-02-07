@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>simple-counter-app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        background: rgb(33,40,48);
+        background: linear-gradient(180deg, rgba(33,40,48,1) 25%, rgba(60,40,31,1) 75%);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+        <div class="container pt-5">
+            <div class="d-flex align-items-center justify-content-center">
+                <div>
+                  <div class="text-center">
+                    <h1 class="display-1 fw-semibold">YUMUŞAK BİR MIRILTI</h1>
+                    <h5>Dikkat dağıtan şeyleri uzaklaştıracak ortam müzikleri.</h5>
+                  </div>
+                    <div class="text-center mt-4">
+                      <img src="image.png" alt="mert-demir" class="img-fluid rounded-5 w-25">
+                      <div>
+                        <audio id="myAudio">
+                          <source src="Mert Demir - İkimize Birden (Live At Zorlu).mp3" type="audio/mpeg">
+                         </audio>
+                          <button class="btn btn-outline-light m-2" onclick="playMusic()">▶ Başlat</button>
+                          <button class="btn btn-outline-light m-2" onclick="pauseMusic()">⏸ Durdur</button>
+                      </div>
+                    </div>
+                    <div class="display-1 text-center fw-light">“Çalışmaya başladığınızdan beri telefonunuz <span id="number" class="fw-bolder">0</span> kere dikkatinizi dağıttı”
+                    </div>
+                    <div class="text-center mt-3">
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-light">Dikkat Sayacı</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row text-center my-5">
+          <div class="col-lg-8 col-12 mx-auto">
+            <div>
+              <h1>Dikkatini Topla ve Rahatla: Seslerin Gücü 🎶🌿</h1>
+              <p>Günümüzün hızla akan dünyasında, dikkatimizi toplamak ve rahatlamak giderek zorlaşıyor. İş, eğitim veya günlük hayatın koşuşturması içinde zihnimizi toparlayacak ve içsel huzurumuzu sağlayacak seslere her zamankinden daha fazla ihtiyacımız var. İşte tam da bu noktada, dikkat dağıtan sesleri geride bırakıp odaklanmanı ve zihinsel dinginliğe ulaşmanı sağlayacak müzikler devreye giriyor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-lg-6 col-12">
+            <div>
+              <h3 class="border-bottom py-2">🎵 Seslerin Zihne Etkisi</h3>
+              <p>Beynimiz, duyduğu seslere duyarlıdır. Kaotik ve yüksek tempolu sesler dikkati dağıtırken, düşük tempolu, doğa sesleriyle       harmanlanmış veya belirli frekansta tasarlanmış müzikler odaklanmamızı ve rahatlamamızı sağlar. <br><br>
+
+                Bazı ses türlerinin zihnimiz üzerindeki etkileri: <br><br>
+                
+                Doğa Sesleri (Yağmur, Dalga, Orman) 🌊🌲 → Zihni sakinleştirir, stres seviyesini düşürür. <br><br>
+                Lo-Fi Müzik 🎧 → Tekrar eden ritimler ve düşük tempolu melodiler sayesinde konsantrasyonu artırır. <br><br>
+                Beyaz Gürültü (White Noise) 📢 → Arka plandaki rahatsız edici sesleri bastırarak daha rahat çalışmanı sağlar. <br><br>
+                Binaural Beats & Alfa Dalga Frekansları 🔊 → Beyin dalgalarını düzenleyerek daha derin bir odaklanma sağlar.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div>
+              <h3 class="border-bottom py-2">💡 Doğru Müziği Seçerek Odaklanmanı Güçlendir!</h3>
+              <p>
+                Herkesin odaklanma süreci farklıdır. Bu yüzden doğru müziği seçmek için aşağıdaki kriterleri göz önünde bulundurabilirsin: <br><br>
+                ✅ Hangi tür müzikte daha iyi odaklandığını keşfet. Kimi insanlar klasik müzikle daha verimli çalışırken, kimi insanlar lo-fi veya ambient müziklerle daha iyi odaklanır. <br><br>
+                ✅ Müzik sözsüz olmalı! Sözlü müzikler genellikle beyni daha fazla çalıştırır ve dikkati dağıtabilir. <br><br>
+                ✅ Beyaz gürültü veya doğa seslerini dene. Eğer tamamen müziksiz bir ortamda çalışmayı seviyorsan, hafif bir arka plan sesi sana yardımcı olabilir.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8 col-12 text-center mx-auto">
+            <div>
+              <h1>🔗 Bu Site Sana Nasıl Yardımcı Olacak?</h1>
+              <p>Bu platformda, senin için özel olarak seçilmiş odaklanma ve rahatlama müzikleri sunuluyor. Dikkatini dağıtan sesleri geride bırakıp, en verimli ve huzurlu anlarını yaşayabileceğin bir ortam yaratmak için buradayız. <br><br>
+
+                🚀 Hemen bir müzik seç, kulaklığını tak ve zihnini berraklaştır! 🎶💆‍♂️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="json.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
